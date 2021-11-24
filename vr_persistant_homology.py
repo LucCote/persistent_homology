@@ -73,6 +73,7 @@ if __name__ == '__main__':
       max_r = float(sys.argv[i+1])
       i += 1
     generate_barcode(points, title="Persistant Homologies of " + filename)
+    i += 1
 
   # Code used for processing political data -- ignore for homology computation
   # data = pandas.read_csv('luc_R_no_stopwords.csv')
