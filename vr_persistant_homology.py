@@ -8,7 +8,7 @@ import pandas
 # number of homologies to computer
 homology_dim = 3
 # max epsilon of vr complex to comopute
-max_r = 10
+max_r = 1
 
 # plots barcodes given barcode data
 def plot_bars(dgm, order='birth', show=False, ax=None, **bar_style):
@@ -61,9 +61,17 @@ def generate_barcode(pointcloud, verbose=False, title=''):
   return dgms
 
 if __name__ == '__main__':
-  for i in range(1, len(sys.argv)):
+  i = 1
+  while i < len(sys.argv):
+    # load pointcloud
     filename = sys.argv[i]
     points = np.loadtxt(filename)
+
+    # set epsilion
+    max_r = 1
+    if(len(sys.argv) > i+1):
+      max_r = float(sys.argv[i+1])
+      i += 1
     generate_barcode(points, title="Persistant Homologies of " + filename)
 
   # Code used for processing political data -- ignore for homology computation
