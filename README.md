@@ -1,6 +1,6 @@
 # persistent_homology
 
-This project is designed to generate barcodes representing the peristent homolgy of pointclouds. To learn more about this topic and how to compute it see other work located (here)[https://epjdatascience.springeropen.com/track/pdf/10.1140/epjds/s13688-017-0109-5.pdf]
+This project is designed to generate barcodes representing the peristent homolgy of pointclouds. To learn more about this topic and how to compute it see other work located [here](https://epjdatascience.springeropen.com/track/pdf/10.1140/epjds/s13688-017-0109-5.pdf)
 
 ## vr_persistent_homology.py
 
